@@ -1,4 +1,5 @@
-📌 QA Automation Demo Project
+**QA Automation API + UI Demo**
+
 
 Author: Kamar Alsamerraey
 Tech: Python · pytest · Selenium · WebDriver Manager · Requests
