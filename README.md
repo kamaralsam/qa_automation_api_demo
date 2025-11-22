@@ -5,126 +5,53 @@
   <img src="https://img.shields.io/badge/Project%20Status-Active-brightgreen" />
 </p>
 
-**QA Automation API + UI Demo**
+# QA Automation API + UI Demo 🚀
 
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3.12-blue" />
+  <img src="https://img.shields.io/badge/pytest-9.0-orange" />
+  <img src="https://img.shields.io/badge/Selenium-WebDriver-green" />
+  <img src="https://img.shields.io/badge/Project%20Type-API%20%2B%20UI%20Tests-brightgreen" />
+</p>
 
-Author: Kamar Alsamerraey
-Tech: Python · pytest · Selenium · WebDriver Manager · Requests
+**Author:** Kamar Alsamerraey  
+**Tech:** Python · pytest · Selenium WebDriver · webdriver-manager · Requests  
 
-🔍 Overview
+---
 
-This project demonstrates end-to-end QA automation skills, combining:
+## 📌 Overview
 
-API Testing using requests
+This project demonstrates **end-to-end QA automation** skills by combining:
 
-UI Testing using Selenium WebDriver
+- ✅ **API testing** with `requests`
+- ✅ **UI testing** with Selenium WebDriver
+- ✅ **pytest fixtures & test structure**
+- ✅ **Manual QA documentation** (test plan, test cases, bug reports)
 
-pytest test structure + fixtures
+It is designed as a clean, industry-style example suitable for a **Junior QA / QA Automation / SDET-in-training** profile.
 
-Manual test documentation (test plan, test cases, bug reports)
+---
 
-It is designed as a clean, industry-style example for a junior QA/Automation role.
+## 🧪 Test Types
 
-🧪 Test Types Included
-1. API Test
+### 1️⃣ API Test – ReqRes Users Endpoint
 
-Located in:
-
-tests/test_users_api.py
-
+**File:** `tests/test_users_api.py`  
 
 Covers:
 
-GET request
+- Sending a `GET` request to a public API
+- Asserting `200 OK` status code
+- Validating JSON structure and data types
 
-Assert status code
-
-Validate response structure
-
-Validate data types and list length
-
-Code sample:
+```python
 def test_get_users_list_returns_200_and_users():
     response = requests.get(f"{BASE_URL}/users?page=2")
+
     assert response.status_code == 200
+
     data = response.json()
-    assert "data" in data and isinstance(data["data"], list)
+    assert "data" in data
+    assert isinstance(data["data"], list)
+    assert len(data["data"]) > 0
 
-2. UI Test (Selenium)
-
-Located in:
-
-tests/ui/test_login_ui.py
-
-
-Covers:
-
-Navigating to login page
-
-Entering credentials
-
-Waiting for inventory page
-
-URL validation
-
-⚙️ Project Structure
-qa_automation_api_demo/
-│
-├── manual/
-│   ├── bug_reports.md
-│   ├── test_cases_ui.md
-│   └── test_plan.md
-│
-├── tests/
-│   ├── api/
-│   │   └── test_users_api.py
-│   ├── ui/
-│   │   └── test_login_ui.py
-│   ├── conftest.py
-│
-├── utils/
-│   └── config.py
-│
-├── venv/
-├── README.md
-└── requirements.txt
-
-▶️ How to Run Tests
-1. Activate virtual environment
-
-Windows:
-
-venv\Scripts\activate
-
-2. Install dependencies
-pip install -r requirements.txt
-
-3. Run API tests
-pytest tests/test_users_api.py -v
-
-4. Run UI tests
-pytest tests/ui/test_login_ui.py -v
-
-🚀 Tools & Libraries Used
-
-Python 3.12
-
-pytest
-
-requests
-
-selenium
-
-webdriver-manager
-
-✨ Purpose
-
-This project showcases the essential core skills for:
-
-QA Tester
-
-QA Automation Engineer (Junior)
-
-Software Test Engineer
-
-SDET (in training)
