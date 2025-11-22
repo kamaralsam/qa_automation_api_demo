@@ -16,10 +16,10 @@
 
 This project demonstrates **end-to-end QA automation** skills by combining:
 
-- ✅ **API testing** with `requests`
-- ✅ **UI testing** with Selenium WebDriver
-- ✅ **pytest fixtures & test structure**
-- ✅ **Manual QA documentation** (test plan, test cases, bug reports)
+- **API testing** with `requests`
+- **UI testing** with Selenium WebDriver
+- **pytest fixtures & test structure**
+- **Manual QA documentation** (test plan, test cases, bug reports)
 
 It is designed as a clean, industry-style example suitable for a **Junior QA / QA Automation / SDET-in-training** profile.
 
