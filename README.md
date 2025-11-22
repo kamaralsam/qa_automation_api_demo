@@ -1,10 +1,3 @@
-<p align="left">
-  <img src="https://img.shields.io/badge/Python-3.12-blue" />
-  <img src="https://img.shields.io/badge/pytest-9.0-orange" />
-  <img src="https://img.shields.io/badge/Selenium-WebDriver-green" />
-  <img src="https://img.shields.io/badge/Project%20Status-Active-brightgreen" />
-</p>
-
 # QA Automation API + UI Demo 🚀
 
 <p align="left">
